@@ -55,7 +55,7 @@ body {
 
 .navigation-button {
   display: block;
-  position: relative;
+  position: absolute;
   box-sizing: border-box;
   min-width: 160px;
   align-self: flex-start;
@@ -63,27 +63,28 @@ body {
   font-size: 16px;
   line-height: 20px;
   border-radius: 4px;
-  padding: 15px 17px 9px 8px;
-  margin-top: 10px;
-  margin-bottom: 7px;
+  padding: 8px 3px 9px 8px;
+  margin-top: 14px;
+  right: 70px;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  min-width: 355px;
+  max-width: 450px;
   margin-left: 38px;
-  margin-right: 272px;
   justify-content: flex-start;
 }
 
 .navigation-user {
+  position: absolute;
   min-width: 84px;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: flex-start;
   align-items: center;
+  right: 242px;
 }
 
 .navigation-link {
@@ -1159,8 +1160,8 @@ GREEN BUTTON */
 
 .like-icon::after {
   position: absolute;
-  bottom: 30px;
-  left: 21px;
+  bottom: 33px;
+  left: 20px;
   content: "12";
   display: flex;
   justify-content: center;
