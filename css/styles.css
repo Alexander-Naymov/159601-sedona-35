@@ -39,7 +39,7 @@ body {
 .frame {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
 
@@ -159,9 +159,8 @@ body {
   min-width: 100%;
   position: relative;
   color: #000;
-  background:
-  url("../image/icons/wave.svg") bottom -1px center/100% no-repeat,
-  url("../image/index-background.jpg") top center/100% no-repeat;
+  background: url("../image/icons/wave.svg") bottom -1px center/100% no-repeat,
+    url("../image/index-background.jpg") top center/100% no-repeat;
   text-align: center;
   margin: 0 auto;
   background-color: #577a92;
@@ -294,8 +293,8 @@ body {
 }
 
 .advantages-title-white {
-   color: #fff;
-   margin-top: 92px;
+  color: #fff;
+  margin-top: 92px;
 }
 
 .advantages-bar {
@@ -321,7 +320,7 @@ body {
 }
 
 .advantages-wrapper-blue {
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   color: #fff;
 }
 
@@ -339,13 +338,13 @@ body {
 }
 
 .advantages-descriptions {
-    font-size: 18px;
-    line-height: 1.166;
-    text-align: center;
-    width: 236px;
-    margin: 0;
-    margin-bottom: 20px;
-  }
+  font-size: 18px;
+  line-height: 1.166;
+  text-align: center;
+  width: 236px;
+  margin: 0;
+  margin-bottom: 20px;
+}
 
 .advantages-icon-food {
   background: center top 80px/74px 70px no-repeat url(../image/icons/food.svg);
@@ -407,6 +406,7 @@ body {
   padding-bottom: 103px;
   min-height: 200px;
 }
+
 .subscribe-description {
   min-width: 530px;
   margin: 0 135px 56px 135px;
@@ -427,7 +427,7 @@ body {
 }
 
 .subscribe-field {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #000;
   min-width: 435px;
   height: 50px;
@@ -499,10 +499,10 @@ body {
   margin-right: 60px;
 }
 
-.social-link{
+.social-link {
   display: block;
   margin-right: auto;
-  color: #83B3D3;
+  color: #83b3d3;
   height: 40px;
   width: 40px;
 }
@@ -591,7 +591,7 @@ body {
 
 .filter-img {
   background: url("../image/catalog-background.jpg") cover no-repeat;
-  background-color:#7196b3;
+  background-color: #7196b3;
   color: #fff;
   padding: 35px 70px 60px 70px;
   margin-bottom: 48px;
@@ -618,19 +618,19 @@ body {
   margin-right: 0;
 }
 
-.control-input:checked + .check-box {
+.control-input:checked+.check-box {
   background-image: url(../image/icons/check.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.control-input:focus-visible + .check-box {
+.control-input:focus-visible+.check-box {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
-.control-input:checked:focus-visible + .check-box {
+.control-input:checked:focus-visible+.check-box {
   background-color: rgba(255, 255, 255, 0.6);
   background-image: url("../images/input-icons/mark.svg");
   background-repeat: no-repeat;
@@ -655,21 +655,21 @@ body {
   left: 0;
 }
 
-.radio-input[type="radio"]:focus + .radio-mark {
+.radio-input[type="radio"]:focus+.radio-mark {
   outline: 3px solid #83b3d3;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.radio-input[type="radio"]:active + .radio-mark {
+.radio-input[type="radio"]:active+.radio-mark {
   background-color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
-.radio-input[type="radio"]:hover + .radio-mark {
+.radio-input[type="radio"]:hover+.radio-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.radio-input[type="radio"]:checked + .radio-mark::after {
+.radio-input[type="radio"]:checked+.radio-mark::after {
   position: absolute;
   content: "";
   height: 10px;
@@ -818,7 +818,7 @@ body {
   margin-bottom: 45px;
 }
 
-.range-scale  {
+.range-scale {
   min-width: 287px;
   padding: 0;
   border: none;
@@ -930,7 +930,7 @@ body {
   border: 2px solid #e6e6e6;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .sort-card:hover {
@@ -964,7 +964,7 @@ body {
 .pagination-link {
   display: block;
   text-decoration: none;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   color: #fff;
   padding: 15px 20px;
   font-size: 20px;
@@ -972,8 +972,9 @@ body {
   line-height: 35px;
   box-sizing: border-box;
   text-align: center;
-  border-radius: 4px
+  border-radius: 4px;
 }
+
 .pagination-item {
   min-width: 60px;
   min-height: 60px;
@@ -990,24 +991,24 @@ body {
 }
 
 .pagination-link:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:active {
-  color: #82B3D3;
+  color: #82b3d3;
 }
 
 .pagination-link-current {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #000;
 }
 
 .pagination-link-current:hover {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination-link-current:active {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .select-descr {
@@ -1043,51 +1044,52 @@ body {
 }
 
 .button-brown:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 /* BLUE BUTTON */
 
 .button-blue {
-  background-color: #83B3D3;
+  background-color: #83b3d3;
 }
 
 .button-blue:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-blue:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-blue:active {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
-.button-blue:disabled{
-  background-color: #E5E5E5;
+.button-blue:disabled {
+  background-color: #e5e5e5;
 }
+
 /*
 GREEN BUTTON */
 
 .button-green {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .button-green:hover {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .button-green:focus {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .button-green:active {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
-.button-green:disabled{
-  background-color: #E5E5E5;
+.button-green:disabled {
+  background-color: #e5e5e5;
 }
 
 .button-favorite,
@@ -1109,7 +1111,7 @@ GREEN BUTTON */
 }
 
 .button-clear {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #333;
 }
 
@@ -1167,7 +1169,7 @@ GREEN BUTTON */
 
 /* MODAL PAGE */
 
-.modal-page{
+.modal-page {
   display: none;
   position: fixed;
   top: 0;
@@ -1180,7 +1182,7 @@ GREEN BUTTON */
 
 .modal-page-on {
   display: block;
- }
+}
 
 .modal-container {
   width: 575px;
@@ -1370,7 +1372,7 @@ GREEN BUTTON */
 
 .open-notification-active {
   display: block;
- }
+}
 
 .adults-lebel {
   grid-column: 1/2;
