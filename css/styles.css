@@ -43,6 +43,8 @@ body {
   background-color: #fff;
 }
 
+/* НАВИГАЦИЯ */
+
 .navigation {
   width: 1060px;
   position: relative;
@@ -71,7 +73,7 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 450px;
+  max-width: 550px;
   margin-left: 38px;
   justify-content: flex-start;
 }
@@ -118,6 +120,7 @@ body {
 
 .navigation-link:hover {
   border-bottom: 2px solid #756257;
+  margin-bottom: -2px;
 }
 
 .navigation-link:active {
@@ -142,10 +145,6 @@ body {
   flex-grow: 1;
 }
 
-.page-header {
-  min-height: 66px;
-}
-
 .page-header-logo {
   position: relative;
   z-index: 2;
@@ -160,25 +159,15 @@ body {
   min-width: 100%;
   position: relative;
   color: #000;
-  background: url("../image/icons/wave.svg") bottom center/100% no-repeat,
-  url("../image/index-background.jpg") top center/cover no-repeat;
+  background:
+  url("../image/icons/wave.svg") bottom -1px center/100% no-repeat,
+  url("../image/index-background.jpg") top center/100% no-repeat;
   text-align: center;
   margin: 0 auto;
   background-color: #577a92;
   margin-bottom: 70px;
   padding-top: 50px;
   min-height: 433px;
-}
-
-.main-img::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 1200px;
-  height: 57px;
-  background: url("../img/wave.svg");
-  background-position: 0 100%;
 }
 
 .main-wrapper {
@@ -201,6 +190,8 @@ body {
   line-height: 36px;
 }
 
+/*КАРТОЧКИ ТОВАРА */
+
 .hotels-list {
   display: grid;
   gap: 20px;
@@ -219,10 +210,10 @@ body {
 
 .hotels-card-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   font-size: 24px;
   line-height: 28px;
-  min-width: auto;
+  min-width: 300px;
 }
 
 .hotel-catalog {
@@ -234,7 +225,7 @@ body {
 .hotels-type {
   width: 160px;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .hotels-price {
@@ -246,15 +237,7 @@ body {
   margin-bottom: -5px;
   height: 40px;
   width: 40px;
-  background-image: url("../image/icons/star.svg");
-  background-repeat: repeat-x;
-  background-position: left center;
-}
-
-.star-box {
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
+  background: url("../image/icons/star.svg") repeat-x left bottom;
 }
 
 .hotel-card-stars-1 {
@@ -272,6 +255,12 @@ body {
 .hotel-card-stars-4 {
   width: 90px;
 }
+
+.hotel-card-stars-5 {
+  width: 115px;
+}
+
+/* БЛОК ПРЕИМУЩЕСТВ */
 
 .advantages-list {
   display: grid;
@@ -410,9 +399,7 @@ body {
 }
 
 .subscribe {
-  background-image: url("../image/Subscribe.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
+  background: url("../image/Subscribe.jpg") no-repeat cover;
   background-color: #52443e;
   text-align: center;
   color: #fff;
@@ -429,7 +416,7 @@ body {
 
 .subscribe-catalog {
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .subscribe-title {
@@ -469,7 +456,7 @@ body {
 .hotel-rate {
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   width: 140px;
   height: 36px;
   font-size: 16px;
@@ -488,10 +475,13 @@ body {
 
 .card-image {
   object-fit: cover;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
+/* FOOTER */
+
 .page-footer {
+  position: relative;
   box-sizing: border-box;
   min-height: auto;
   display: flex;
@@ -503,7 +493,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 180px;
+  max-width: 200px;
+  min-width: 140px;
   margin-top: 9px;
   margin-right: 60px;
 }
@@ -541,7 +532,7 @@ body {
 
 .footer-phone {
   margin: 0 auto;
-  margin-bottom: 10px;
+  min-width: 445px;
 }
 
 .phone-link {
@@ -569,8 +560,10 @@ body {
 }
 
 .developer-icon {
+  position: absolute;
   display: block;
   color: #000;
+  right: 72px;
 }
 
 .developer-icon:hover {
@@ -597,14 +590,11 @@ body {
 }
 
 .filter-img {
-  background-image: url("../image/catalog-background.jpg");
+  background: url("../image/catalog-background.jpg") cover no-repeat;
   background-color:#7196b3;
-  background-size: auto;
-  background-repeat: no-repeat;
   color: #fff;
   padding: 35px 70px 60px 70px;
-  margin-bottom: 50px;
-  min-height: auto;
+  margin-bottom: 48px;
 }
 
 .button-form {
@@ -725,6 +715,7 @@ body {
   min-width: 290px;
   padding: 0;
   border: 0;
+  margin-right: 0;
   margin-left: 62px;
   box-sizing: border-box;
 }
@@ -817,7 +808,6 @@ body {
 .range-input::-webkit-inner-spin-button {
   display: none;
   -webkit-appearance: none;
-  -moz-appearance: textfield;
   margin: 0;
 }
 
@@ -861,8 +851,7 @@ body {
 
 .breadcrumbs-link::before {
   position: absolute;
-  background-image: url(../image/icons/pointer.svg);
-  background-repeat: no-repeat;
+  background: url(../image/icons/pointer.svg) no-repeat;
 }
 
 .breadcrumbs-link {
@@ -873,6 +862,7 @@ body {
 
 .inner-header-title {
   margin: 0;
+  margin-bottom: 6px;
   font-size: 60px;
   line-height: 78px;
 }
@@ -953,13 +943,14 @@ body {
 
 .sort-icon {
   display: block;
-  width: 48px;
-  /* height: 48px; */
+  width: 42px;
+  height: 55px;
 }
 
 .pagination {
   display: flex;
-  width: 400px;
+  min-width: 400px;
+  height: 55px;
   justify-content: space-between;
 }
 
@@ -975,16 +966,17 @@ body {
   text-decoration: none;
   background-color: #83B3D3;
   color: #fff;
-  padding: 15px 15px;
+  padding: 15px 20px;
   font-size: 20px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 35px;
   box-sizing: border-box;
   text-align: center;
   border-radius: 4px
 }
 .pagination-item {
   min-width: 60px;
+  min-height: 60px;
   margin: 0 3px;
 }
 
@@ -1325,9 +1317,7 @@ GREEN BUTTON */
   bottom: 31px;
   width: 15px;
   height: 15px;
-  background-image: url("../image/icons/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../image/icons/calendar.svg") no-repeat center;
   border: none;
 }
 
@@ -1365,9 +1355,7 @@ GREEN BUTTON */
   bottom: 32px;
   width: 15px;
   height: 15px;
-  background-image: url("../image/icons/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../image/icons/calendar.svg") no-repeat center;
   border: none;
 }
 
@@ -1440,7 +1428,7 @@ GREEN BUTTON */
 .plus-button {
   position: absolute;
   top: 15px;
-  right: 0px;
+  right: 0;
   border: none;
   background: transparent;
 }
