@@ -158,7 +158,6 @@ body {
 .main-img {
   min-width: 100%;
   position: relative;
-  color: #000;
   background: url("../image/icons/wave.svg") bottom -1px center/100% no-repeat,
     url("../image/index-background.jpg") top center/100% no-repeat;
   text-align: center;
@@ -398,7 +397,7 @@ body {
 }
 
 .subscribe {
-  background: url("../image/Subscribe.jpg") no-repeat cover;
+  background: url("../image/Subscribe.jpg") no-repeat center/cover;
   background-color: #52443e;
   text-align: center;
   color: #fff;
@@ -590,7 +589,7 @@ body {
 }
 
 .filter-img {
-  background: url("../image/catalog-background.jpg") cover no-repeat;
+  background: url("../image/catalog-background.jpg") no-repeat center/cover;
   background-color: #7196b3;
   color: #fff;
   padding: 35px 70px 60px 70px;
@@ -610,6 +609,10 @@ body {
   margin-left: -40px;
   border-radius: 5px;
   background-color: #fff;
+}
+
+.catalog-filter-item:hover {
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .control-input {
@@ -720,6 +723,10 @@ body {
   box-sizing: border-box;
 }
 
+.catalog-filter-label:focus {
+  color: rgba(131, 179, 211, 1)
+}
+
 .catalog-filter-label {
   position: relative;
   height: 48px;
@@ -741,6 +748,7 @@ body {
 .catalog-filter-label:nth-child(2) .range-input {
   border-radius: 0 4px 4px 0;
 }
+
 
 .catalog-filter-container {
   width: 1090px;
@@ -805,6 +813,15 @@ body {
   font-size: 18px;
 }
 
+.range-input:hover {
+  color: rgba(230, 230, 230, 1);
+}
+
+.range-input:focus-visible {
+  outline-color: rgba(129, 179, 210, 1);
+  box-shadow: 0 0 0 3px #81b3d2;
+}
+
 .range-input::-webkit-inner-spin-button {
   display: none;
   -webkit-appearance: none;
@@ -847,6 +864,7 @@ body {
 .breadcrumbs {
   display: flex;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .breadcrumbs-link::before {
@@ -988,6 +1006,10 @@ body {
 .pagination-link-clear {
   background-color: transparent;
   color: #000;
+}
+
+.pagination-link-clear:hover {
+  display: none;
 }
 
 .pagination-link:hover {
