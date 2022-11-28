@@ -60,6 +60,7 @@ body {
   position: absolute;
   box-sizing: border-box;
   min-width: 160px;
+  max-width: 170px;
   align-self: flex-start;
   border: 3px transparent;
   font-size: 16px;
@@ -439,6 +440,7 @@ body {
 
 .subscribe-button {
   min-height: 47px;
+  max-width: 240px;
   border-radius: 0 4px 4px 0;
   font-size: 20px;
   line-height: 36px;
@@ -531,7 +533,8 @@ body {
 
 .footer-phone {
   margin: 0 auto;
-  min-width: 445px;
+  min-width: 455px;
+  max-width: 500px;
 }
 
 .phone-link {
@@ -611,8 +614,12 @@ body {
   background-color: #fff;
 }
 
-.catalog-filter-item:hover {
+.control:hover {
   color: rgba(255, 255, 255, 0.3)
+}
+
+.control:hover .check-box {
+  opacity: 0.6;
 }
 
 .control-input {
@@ -635,9 +642,6 @@ body {
 
 .control-input:checked:focus-visible+.check-box {
   background-color: rgba(255, 255, 255, 0.6);
-  background-image: url("../images/input-icons/mark.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
@@ -715,7 +719,7 @@ body {
 }
 
 .catalog-price-group {
-  min-width: 290px;
+  max-width: 290px;
   padding: 0;
   border: 0;
   margin-right: 0;
@@ -758,7 +762,8 @@ body {
 .catalog-filter-service {
   display: flex;
   margin-right: 29px;
-  min-width: 180px;
+  max-width: 200px;
+  min-width: 190px;
   margin-left: 0;
   border: none;
   padding: 0;
@@ -851,6 +856,10 @@ body {
   cursor: pointer;
 }
 
+.range-toggle:focus-visible {
+  background-color: rgba(131, 179, 211, 1);
+}
+
 .toggle-min {
   top: -8px;
   left: 0;
@@ -860,6 +869,7 @@ body {
   top: -8px;
   left: 205px;
 }
+
 
 .breadcrumbs {
   display: flex;
@@ -888,6 +898,7 @@ body {
 .found-descr {
   margin: 0;
   margin-right: 150px;
+  max-width: 340px;
   font-size: 30px;
   font-weight: 700;
   line-height: 39px;
@@ -898,7 +909,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-  min-width: 397px;
+  min-width: 390px;
 }
 
 .select-control {
@@ -935,15 +946,16 @@ body {
 
 .sort-list {
   display: flex;
+  flex-wrap: wrap;
   min-width: 170px;
-  height: 48px;
-  justify-content: space-around;
-  align-items: center;
+  max-width: 230px;
+  min-height: 40px;
+  justify-content: flex-end;
 }
 
 .sort-card {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 43px;
   border-radius: 4px;
   border: 2px solid #e6e6e6;
   display: flex;
@@ -961,22 +973,26 @@ body {
 
 .sort-icon {
   display: block;
-  width: 42px;
-  height: 55px;
+  margin: 0px 5px 5px 0;
+  width: 49px;
+  height: 42px;
 }
 
 .pagination {
   display: flex;
-  min-width: 400px;
-  height: 55px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 470px;
+  max-width: 700px;
+  min-height: 60px;
+  justify-content: flex-start;
 }
 
 .pagination-container {
   display: flex;
   margin-left: 70px;
   margin-bottom: 160px;
-  width: 400px;
+  max-width: 400px;
+  height: 60px;
 }
 
 .pagination-link {
@@ -996,11 +1012,7 @@ body {
 .pagination-item {
   min-width: 60px;
   min-height: 60px;
-  margin: 0 3px;
-}
-
-.pagination-item:last-child {
-  margin: 0;
+  margin: 0px 3px 5px 4px;
 }
 
 .pagination-link-clear {
@@ -1141,6 +1153,7 @@ GREEN BUTTON */
   display: flex;
   flex-wrap: wrap;
   border: none;
+  max-width: 200px;
   min-width: 190px;
   min-height: 35px;
   font-size: 16px;
@@ -1155,6 +1168,7 @@ GREEN BUTTON */
   border: none;
   background-color: transparent;
   margin-left: 58px;
+  max-width: 80px;
   min-width: 70px;
   padding: 0;
   font-family: inherit;
